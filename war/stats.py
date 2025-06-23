@@ -11,7 +11,7 @@ def plot_war_stats(hpg=[],tpg=[],**kwargs):
     fig,ax=plt.subplots(1,2,figsize=(10,6))
     plt.subplots_adjust(hspace=0.3)
     ax[0].hist(HPG,bins=100,range=(0,2000),density=True,histtype='step',label='Hands per game',color=mycmap(0.3))
-    ax[0].hist(TPG,bins=100,range=(0,2000),density=True,histtype='step',label='Tibreaks per game',color=mycmap(0.8))
+    ax[0].hist(TPG,bins=100,range=(0,2000),density=True,histtype='step',label='Tiebreaks per game',color=mycmap(0.8))
     ax[0].legend()
     ax[0].set_xlabel('Hands, Tiebreaks')
     ax[0].set_ylabel('Frequency')
